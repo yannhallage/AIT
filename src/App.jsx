@@ -1,16 +1,11 @@
-import { useState } from 'react'
+// App.jsx
 
+import Component_Router from "./router/routers";
 
-function App() {
-
-
+const App = () => {
   return (
-    <>
-      <span>
-        AIT
-      </span>
-    </>
-  )
-}
+    <Component_Router />
+  );
+};
 
-export default App
+export default App;
