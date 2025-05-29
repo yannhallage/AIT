@@ -8,6 +8,13 @@ import { FcGoogle } from "react-icons/fc"
 import { Context } from "../context/authContext"
 import { useContext } from "react"
 import SignIn from "./signIn"
+import {
+    Carousel,
+    CarouselContent,
+    CarouselItem,
+    CarouselNext,
+    CarouselPrevious,
+} from "@/components/ui/carousel"
 
 const SignUp = () => {
     const { setUtilisation_context } = useContext(Context)
@@ -19,6 +26,13 @@ const SignUp = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
             >
+                <div className="cursor-pointer">
+                    <Carousel className="cursor-pointer">
+                        <CarouselPrevious />
+                        {/* Tu peux aussi mettre ici les éléments à faire défiler */}
+                    </Carousel>
+                </div>
+
                 <Card className="w-full max-w-md shadow-xl">
                     <CardHeader>
                         <CardTitle className="text-center text-2xl text-[#1f1f1f]">
@@ -48,7 +62,7 @@ const SignUp = () => {
                         </div>
                         <div className="space-y-2">
                             <Label htmlFor="email">Email</Label>
-                            <Input id="email" placeholder="you@example.com" />
+                            <Input id="email" placeholder="votremail@example.com" />
                         </div>
 
                         <div className="space-y-2">
