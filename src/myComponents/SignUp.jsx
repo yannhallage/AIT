@@ -29,7 +29,6 @@ const SignUp = () => {
                 <div className="cursor-pointer">
                     <Carousel className="cursor-pointer">
                         <CarouselPrevious />
-                        {/* Tu peux aussi mettre ici les éléments à faire défiler */}
                     </Carousel>
                 </div>
 
