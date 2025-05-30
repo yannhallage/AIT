@@ -21,7 +21,7 @@ export default function Authentificati() {
                     transition={{ duration: 0.6, ease: "easeOut" }}
                 />
                 <h2 className="text-4xl font-bold leading-tight text-center mt-6 text-[#4b2e20]">
-                    {/* Ajoute un slogan si tu veux ici */}
+                    
                 </h2>
             </div>
 
