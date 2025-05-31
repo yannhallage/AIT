@@ -31,7 +31,7 @@ const Divtickets = () => {
                 <motion.div className="bg-white flex-1 rounded-t-2xl rounded-b-2xl shadow-2xl border border-gray-200"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, ease: "easeOut" }}
+                    transition={{ duration: 0.2, ease: "easeOut" }}
                 >
                     <div className="p-4 border-b">
                         <h2 className="text-lg font-semibold text-gray-800">🛵 Livraison</h2>
