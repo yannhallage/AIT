@@ -28,7 +28,7 @@ const Divtickets = () => {
         <>
             <div className="flex flex-col md:flex-row gap-4 w-full max-w-6xl mx-auto">
                 {/* Formulaire 1 */}
-                <motion.div className="bg-white flex-1 rounded-t-2xl shadow-2xl border border-gray-200"
+                <motion.div className="bg-white flex-1 rounded-t-2xl rounded-b-2xl shadow-2xl border border-gray-200"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
