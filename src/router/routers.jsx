@@ -1,6 +1,7 @@
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Authentification from "../pages/authentification";
+import Tickets_Gestion from "../pages/gestion_tickets";
 
 const Component_Router = () => {
     return (
@@ -29,6 +30,7 @@ const Component_Router = () => {
             <Router>
                 <Routes>
                     <Route path="/" element={<Authentification />}/>
+                    <Route path="/tickets" element={<Tickets_Gestion />}/>
                 </Routes>
             </Router>
         </>
