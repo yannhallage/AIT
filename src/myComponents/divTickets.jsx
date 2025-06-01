@@ -15,7 +15,7 @@ const Divtickets = () => {
     });
     const handleSubmit1 = (e) => {
         e.preventDefault();
-        alert("Formulaire Livraison:\n" + JSON.stringify(formData1, null, 2));
+        // alert("Formulaire Livraison:\n" + JSON.stringify(formData1, null, 2));
     };
 
     const handleChange1 = (e) => {
