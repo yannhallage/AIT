@@ -23,7 +23,11 @@ const Navbar = () => {
                     <img src="https://avatars.mds.yandex.net/get-lpc/10116223/867eda96-a281-4bc1-abaf-fa261004e1a1/orig" alt="" srcset="" />
                 </h1>
                 <Input placeholder="🔍 Rechercher..." className="w-64 bg-white" />
-                <Button >
+                <Button
+                    onClick={() => {
+                        console.log('deconnection')
+                    }}
+                >
                     sign out
                 </Button>
             </div>
@@ -34,13 +38,24 @@ const Navbar = () => {
                 }
             </div>
             {/* Carte */}
-            <MapContainer center={[25.2048, 55.2708]} zoom={12} className="h-full w-full z-0">
+            <MapContainer center={[5.334152, -4.021490]} zoom={12} className="h-full w-full z-0">
                 <TileLayer
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                     attribution="&copy; OpenStreetMap contributors"
                 />
                 <Marker
-                    position={[25.2048, 55.2708]}
+                    position={[5.334152, -4.021490]}
+                    eventHandlers={{
+                        click: () => {
+                            setVerification_divticket(!verification_divticket);
+                            console.log(verification_divticket);
+                        },
+                    }}
+                >
+                    <Popup>Pickup • 4 min</Popup>
+                </Marker>
+                <Marker
+                    position={[48.8609074, 2.2712711]}
                     eventHandlers={{
                         click: () => {
                             setVerification_divticket(!verification_divticket);
